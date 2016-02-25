@@ -6,25 +6,28 @@
 ![3](https://github.com/wenhuaijun/KeywordsFlowView/blob/master/introduce/S60225-135738.jpg " ")
 
 ##KeywordsFlowView的布局
- <com.wenhuaijun.keywordsflowdemo.KeywordsFlowView
-  android:id="@+id/keywordsFlowView"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  />
-##KeywordsFlowView的java代码设置
-  public static final String[] keywords = { "Apple", "Android", "呵呵",
+
+         <com.wenhuaijun.keywordsflowdemo.KeywordsFlowView
+           android:id="@+id/keywordsFlowView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           />
+##KeywordsFlowView的布局
+
+          public static final String[] keywords = { "Apple", "Android", "呵呵",
             "高富帅","女神","拥抱","旅行","爱情","屌丝","搞笑","暴走漫画","重邮","信科",
             "唯美","汪星人","秋天","雨天","科幻","黑夜",
             "孤独","星空","东京食尸鬼","金正恩","张全蛋","东京热","陈希妍",
             "明星","NBA","马云","码农","动漫","时尚","熊孩子","地理","伤感",
             "二次元"
     };
-   keywordsFlowView = (KeywordsFlowView)findViewById(R.id.keywordsFlowView);
-   //设置每次随机飞入文字的个数
-   keywordsFlowView.setTextShowSize(15);
-   //设置是否允许滑动屏幕切换文字
-   keywordsFlowView.shouldScroolFlow(true);
-   //开始展示
-   keywordsFlowView.show(keywords, KeywordsFlow.ANIMATION_IN);
+         keywordsFlowView = (KeywordsFlowView)findViewById(R.id.keywordsFlowView);
+         //设置每次随机飞入文字的个数
+         keywordsFlowView.setTextShowSize(15);
+         //设置是否允许滑动屏幕切换文字
+         keywordsFlowView.shouldScroolFlow(true);
+         //开始展示
+         keywordsFlowView.show(keywords, KeywordsFlow.ANIMATION_IN);//文字随机飞入
+         keywordsFlowView.show(keywords,KeywordsFlow.ANIMATION_OUT);//文字随机飞出
    
    
