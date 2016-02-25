@@ -14,7 +14,7 @@
            android:layout_width="match_parent"
            android:layout_height="match_parent"
            />
-##KeywordsFlowView的布局
+##KeywordsFlowView的java代码
 
           public static final String[] keywords = { "Apple", "Android", "呵呵",
             "高富帅","女神","拥抱","旅行","爱情","屌丝","搞笑","暴走漫画","重邮","信科",
