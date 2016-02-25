@@ -31,5 +31,7 @@
          //开始展示
          keywordsFlowView.show(keywords, KeywordsFlow.ANIMATION_IN);//文字随机飞入
          keywordsFlowView.show(keywords,KeywordsFlow.ANIMATION_OUT);//文字随机飞出
+         //监听文字的点击事件
+         keywordsFlowView.setOnItemClickListener(this);//点击文字会将TextView返回到onClick（View view）回调中
    
    
